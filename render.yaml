@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: olympics-analysis
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "streamlit run app.py"
+    plan: free  # or choose a different plan
